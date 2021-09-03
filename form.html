@@ -10,10 +10,12 @@
 </head>
 <body>
     <form action="" method="POST">
+        <fieldset> 
+            <legend>USING NEW FORM TAGS</legend>
 <label for="user_name">Fill name</label>
 <input type="text" placeholder="input text" value="here" maxlength="5" name="user_name" id="user_name">
 <br><br>
-<input type="password"><br><br>
+<input type="password" required><br><br>
 <input type="email"><br><br>
 <input type="url"><br><br>
 <input type="date"> <br><br>
@@ -25,7 +27,22 @@
 <input type="file"><br><br>
 <input type="button"><br><br>
 <input type="submit" value="GO"> <input type="reset" value="clean"><br><br>
-
+<input type="range" min="1" max="10" step="1" value="1">
+<br><br>
+<label>Enter your movie:
+<input type="text" name="movies" list="movies">
+<datalist id="movies">
+    <option value="spiderman">
+        <option value="spiderman1">
+            <option value="spiderman2">
+</datalist>
+</label>
+<p>
+    <label>You have entered:
+        <output onforminput="this.value=movies.value"/>
+        </label>
+        </p>
+</fieldset>
 </form>
 <form>
     <textarea placeholder="input text" maxlength="50">
@@ -34,22 +51,24 @@ random text
 <br><br>
 <button type="button">PRESS</button>
 <br><br>
+<aside style="float:right" >
 <select multiple>
     <option disabled selected>-------</option>
     <option value="">Book</option>
     <option >Book2</option>
     <option value="">Book3</option>
 </select>
+</aside>
 <br><br>
     </form>
 <br><br>
 <div id="header">Head of site</div>
 <header>More popular then div tag</header>
 <main>Main part of site</main>
-<aside>Aside part of site</aside>
+<aside style="float: right;">Aside part of <mark>site</mark></aside>
 <footer>Footer</footer>
 <br><br>
-<progress max="100" value="10">charged on 10 </progress>
+<progress min="0" max="100" value="10">charged on 10 </progress>
 <br><br>
 <details>
     <summary>
