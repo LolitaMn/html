@@ -1,3 +1,19 @@
-body {
+.main-text {
     color:red;
 }
+
+
+
+#text-in-p {
+
+    color:blue;
+
+}
+
+ div p b, div i {
+    color:green;
+}
+
+/*div, .main-text, #text-in-p, div p b {
+    color: cadetblue;
+}*/
