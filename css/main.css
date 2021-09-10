@@ -1,18 +1,64 @@
-.main-text {
+#some-id::after{
+    content: '123';
+    color: red;
+    text-decoration: line-through;
+}
+
+
+#some-id::before{
+    content: '123';
+    color: blueviolet;
+    text-decoration: line-through;
+}
+
+p:last-of-type{
+     text-decoration:overline;
+     text-decoration-color: greenyellow;
+     
+}
+
+p:first-of-type{
+    text-decoration:line-through;
+}
+
+p.main_link::first-line{
+    color: green;
+}
+
+p.text:not(:empty){
+color: gray;
+}
+
+p.text:empty::after{
+    content: attr(title);
+    
+    }
+
+.main_link {
     color:red;
+    text-decoration:none ;
 }
 
 
-
-#text-in-p {
-
+.main_link:hover {
     color:blue;
-
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
 }
 
- div p b, div i {
-    color:green;
+
+.main_link:active{
+    text-decoration: line-through;
 }
+
+.main_link:visited{
+    color:gray ;
+}
+
+input:required{text-decoration: underline;}
+input{color: blue;}
+input:focus {color:red}
 
 /*div, .main-text, #text-in-p, div p b {
     color: cadetblue;
