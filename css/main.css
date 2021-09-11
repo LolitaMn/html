@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+*{
+    margin: 0;
+    padding:0;
+}
+
 .main-text1{
     color: red;
     text-align:center ;
@@ -15,6 +20,23 @@
     cursor:pointer;
 }
 
+
+.block {
+background: red;
+height: 200px;
+width: 200px;
+border: 7px dotted silver;
+border-bottom: 0;
+border-top-style:solid;
+border-style: double;
+border-radius: 15px 50%;
+opacity: 0.9;
+
+margin: 20px 50px;
+padding: 20px;
+
+display: block;
+}
 
 /*
 body{
