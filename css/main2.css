@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff;
+}
+
+h2:hover{
+    color: red;
+}
+
+
+h2[class=title2]{
+    color: blue;
+}
+
+#services{
+    color: green;
+}
+
+/*li:nth-child(2){
+color: steelblue;
+}
+
+/*#google-link:link{
+color: blue;
+}
+
+#google-link:visited{
+color: red;
+}*/
+
+h2 + a {
+    color: red;
+}
+
+textarea ~ button {
+    color: purple;
+}
+
+ul > li {
+    color: blue;
+}
+
+ul li {
+    color: green;
+}
+
+img[src*="landscape"] {
+    border: 10px solid black;
+}
+
+h2[class~=article-subtitle] {
+background: green;
+}
