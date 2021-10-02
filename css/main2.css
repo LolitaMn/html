@@ -1,4 +1,47 @@
 body {
+    background: rgb(204, 229, 255) ;
+}
+
+#title {
+    color: rgb(186, 133, 9);
+}
+
+.subtitle {
+    color: rgb(200, 148, 30);
+}
+
+
+#service-image {
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
     background-color: #ffffff;
 }
 
@@ -15,7 +58,7 @@ h2[class=title2]{
     color: green;
 }
 
-/*li:nth-child(2){
+li:nth-child(2){
 color: steelblue;
 }
 
@@ -25,7 +68,7 @@ color: blue;
 
 #google-link:visited{
 color: red;
-}*/
+}
 
 h2 + a {
     color: red;
@@ -49,4 +92,4 @@ img[src*="landscape"] {
 
 h2[class~=article-subtitle] {
 background: green;
-}
+}*/
