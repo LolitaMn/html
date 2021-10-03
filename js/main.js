@@ -136,7 +136,7 @@ if(data) {
 console.log(data);
 */
 
-var person = null;
+/*var person = null;
 if(confirm("Вы уверены?")) {
 person = prompt("введите ваше имя");
 alert("Привет, " + person);
@@ -144,3 +144,68 @@ alert("Привет, " + person);
     alert("Вы нажали отмена");
 
 }
+*/
+
+
+/*
+function info(word) {
+    console.log(word + "!");
+    
+}
+
+function summa(a, b) {
+var res = a + b;
+info(res);
+}
+
+summa(5, 7);
+*/
+
+/*
+function summa(arr) {
+    var sum = 0;
+
+    for(var i = 0; i < arr.length; i++) 
+    sum += arr[i];
+
+ return sum;
+    
+}
+
+var array = [6, 8, 1];
+
+ var res = summa(array);
+ console.log("result" + res);
+ */
+
+ /*
+ var num = 10;
+
+ function info() {
+     var num = 20;
+     console.log(num);
+ }
+
+ info();
+
+ console.log(num);
+ */
+
+
+ /*var counter = 0;
+
+ function onClickButton(el) {
+     counter++;
+     el.innerHTML = "you had click" + counter;
+     //el.style.background = "red";
+     //el.style.color = "blue";
+
+     el.style.cssText= "border-radius: 5px; border: 0; font-size: 20px";
+ }
+
+ function onInput(el) {
+     if(el.value == "Hello")
+     alert("you too");
+     console.log(el.value);
+ }
+ */
