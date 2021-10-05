@@ -210,7 +210,7 @@ var array = [6, 8, 1];
  }
  */
 
-
+/*
  var text = document.getElementById('text');
 text.title = "New text";
  console.log(text.title);
@@ -224,8 +224,73 @@ text.title = "New text";
 
  //document.getElementById('text').style.color = "white";
 
- var spans = document.getElementsByTagName('span');
+ //var spans = document.getElementsByTagName('span');
 
+ /*
+ var spans = document.getElementsByClassName('simple-text');
  for( var i = 0; i < spans.length; i++) {
-     console.log([spans[i].innerHTML]);
+     console.log(spans[i].innerHTML);
  }
+*/
+
+document.getElementById('main-form').addEventListener("submit", checkForm);
+
+function checkForm(event) {
+    event.preventDefault();
+    var el = document.getElementById('main-form');
+    var name = el.name.value;
+    var pass = el.pass.value;
+    var repass = el.repass.value; 
+    var state = el.state.value;                      // или document.getElementById('name').value;
+//console.log(state + "-" + pass + "-" + repass);
+
+var fail = "";
+if(name == "" || pass == "" || state == "")
+ fail = "Fill all fields, please";
+else if(name.length <= 1 || name.length > 50)          //  (|| - это символ "или")
+  fail = "Fill correct name";
+else if(pass != repass)
+ fail = "passwords doesn`t match"
+else if(pass.split("&").length > 1) 
+ fail = "Incorrect password";
+
+ if(fail != "") {
+     document.getElementById('error').innerHTML = fail;
+return false;
+ } else  {
+     alert("Everything filled  correct")
+     window.location = 'https://google.com';
+     
+ }
+
+}
+
+
+/*
+var stop = setInterval(my_func, 1000);
+
+var counter = 0;
+function my_func() {
+    counter++;
+    console.log("Counter:" + counter);
+
+    if(counter == 3)                                            интервалы
+    clearInterval(stop);
+}
+*/
+
+/*
+var counter = 0
+setInterval(function(){
+counter++;
+console.log("Sec ago:" + counter);
+}, 1000);
+*/
+
+/*                                                                таймеры
+setTimeout(my_func, 2000);
+    
+    function my_func() {
+console.log("timer is working");                      
+}
+*/
