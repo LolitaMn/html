@@ -6,10 +6,8 @@ let count = firstBatch + secondBatch
  console.log(count)
 */
 
-/*
-let countEl = document.getElementById("count-el")   // "count-el" это передать аргумент pass in argument
-console.log(countEl)
 
+let countEl = document.getElementById("count-el")   // "count-el" это передать аргумент pass in argument
 let count = 0
 function increment () {
    
@@ -18,6 +16,8 @@ function increment () {
     
 }
 
-*/
 
-
+function save () {
+    console.log(count)
+}
+save()
