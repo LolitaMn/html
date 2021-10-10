@@ -47,9 +47,60 @@ welcomeEl.innerText = greeting + name
 welcomeEl.innerText += " 😀"               // or welcomeEl.innerText = welcomeEl.innerText + "😀"
 
 */
+/*
+let myPoints = 3
+function add3Points() {
+    myPoints += 3
+}
 
-let firstName = "Tim"
-let lastName = "Dino"
+function remove1Points() {
+   myPoints -= 1
+}
+add3Points()
+add3Points()
+add3Points()
+remove1Points()
+remove1Points()
+console.log(myPoints)
+*/
+/*
+let errorP = document.getElementById("error")
+console.log(errorP)
 
-let fullName = firstName + " " + lastName
-console.log(fullName)
+function purchase() {
+    console.log("button clicked")
+    errorP.textContent = "Something went wrong!"
+}
+*/
+
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+let sumIt = document.getElementById("sum-el")
+
+function add() {
+    let result = num1 + num2
+    sumIt.textContent = "Sum: " + result
+ 
+}
+
+function substract() {
+    let result = num1 - num2
+    sumIt.textContent = "Sum: " + result
+}
+
+function divide() {
+    let result = num1 / num2
+    sumIt.textContent = "Sum: " + result
+}
+
+function multiply() {
+    let result = num1 * num2
+    sumIt.textContent = "Sum: " + result
+}
+
+add()
+substract()
+divide()
+multiply()
