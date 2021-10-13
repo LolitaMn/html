@@ -38,7 +38,7 @@ for (let count = 1; count < 11; count += 1) {
 */
 
  
-for (let i = 0; i < 100; i += 10) {
+for (let i = 10; i < 101; i += 10) {
     console.log(i)
 }
 
