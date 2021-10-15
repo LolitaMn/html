@@ -155,25 +155,43 @@ if(false) {
 */
 
 
+player = {
+    name: "Per",
+    chips: 200
+}
 
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let cards = [firstCard, secondCard]      // array ordered list of items
-let sum = firstCard + secondCard
+
+let cards = []      // array ordered list of items
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let message = ""
-
 let messageEl = document.getElementById("message-el")
 //let sumEl = document.getElementById("sum-el") or так как ниже более динамично
  let sumEl = document.querySelector(".sum-el")
  let cardsEl = document.querySelector("#cards-el")
-
+ let playerEl = document.getElementById("player-el")
+ 
+ playerEl.textContent = player.name + ": $" + player.chips
+ 
  function getRandomCard() {
-     return 5
+    let randomNumber = Math.floor( Math.random() * 13 ) + 1
+    if (randomNumber > 10) {
+        return 10
+    } else if (randomNumber === 1) {
+        return 11
+    } else {
+        return randomNumber
+    }
+    
  }
 
  function startGame(){
+     isAlive = true
+     let firstCard = getRandomCard()
+     let secondCard = getRandomCard()
+     cards = [firstCard, secondCard]
+     sum = firstCard + secondCard
       renderGame()
  }
 
@@ -200,12 +218,14 @@ if(sum <= 20) {
 }
 
 function newCard() {
-    console.log("Drawing a new card from the deck")
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    console.log(cards)
-    renderGame()   
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        console.log(cards)
+        renderGame() 
+    }
+         
 }
 
 

@@ -110,5 +110,110 @@ for (let i = 10; i < 101; i += 10) {
 //console.log(randomNumber)
 //console.log(flooredNumber)
 
-let rNumber = Math.floor(Math.random() * 6 ) // floor удаляет все десятичные из random в итоге получаем 012345
-console.log(rNumber)
+// let rNumber = Math.floor(Math.random() * 6 ) + 1 // floor удаляет все десятичные из random в итоге получаем 012345; и +1 это увеличиваем цифры до 6
+// console.log(rNumber)
+
+// function rollDice() {
+//     let dice = Math.floor(Math.random() * 6) + 1
+//     return dice
+// }
+
+// console.log( rollDice() )
+
+// let hasCompletedCourse = true
+// let givesCertificat = true
+
+//  if (hasCompletedCourse === true && givesCertificat === true) {
+//      generateCertificate()
+//  }
+
+// function generateCertificate() {
+//     console.log("Generating certificate.....")
+// }
+
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
+//                               //And
+// if (hasSolvedChallenge === false && hasHintsLeft === false) {
+//     showSolution() 
+// }
+
+// function showSolution () {
+//      console.log("Showing the solution.....")
+// }
+
+
+// let hasCompletedCourse = true
+// let givesCertificat = true
+//                                //OR
+//  if (hasCompletedCourse === true || givesCertificat === true) {
+//      generateCertificate()
+//  }
+
+// function generateCertificate() {
+//     console.log("Generating certificate.....")
+// }
+
+
+// let likesDocumentaries = true
+// let likesStartups = false
+
+// if (likesDocumentaries === true || likesStartups === true) {
+//      recommendMovie()
+// }
+
+// function recommendMovie() {
+//     console.log("Hey, check out this new film!")
+// }
+
+
+   // Это объект
+// let course = {               
+//     title: "Learn CSS Grid for free",
+//     lessons: 16,
+//     creator: "Per Harald Borgen",
+//     length: 63,
+//     level: 2,
+//     isFree: true,
+//     tags: ["html", "css"]                            // массив в объекте
+// }
+// console.log( course.tags )
+
+
+// let castle = {
+//     title: "live like king",
+//     isSuperHost: true,
+//     price: 150,
+//     images: ["img/castle1.png","img/castle2.png", "img/castle3.png", "img/castle1.png"]
+
+// }
+
+// console.log( airbnb.title )
+// console.log( airbnb.images )
+
+
+// let person = {
+//     name: "Lolita",
+//     age: 29,
+//     counry: "Armenia"
+// }
+
+// function logData() {
+//   console.log( person.name + " is " + person.age + " years old and lives in " + person.country )
+
+// }
+// logData() 
+
+let age = 15 
+
+if (age < 6) {
+    console.log("free")
+} else if (age < 18) {
+    console.log("child discount")
+} else if (age < 27) {
+    console.log("student discount")
+}else if (age < 67) {
+    console.log("full price")
+} else {
+    console.log("senior")
+}
