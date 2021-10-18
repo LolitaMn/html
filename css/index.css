@@ -29,4 +29,36 @@ button {
     font-weight: bold;
     color: #016f32;
     border: none;
+    
+}
+
+#apple-shelf {
+width: 150px;
+height: 50px;
+background-color: red;
+border: none;
+border-radius: 10px;
+color: white;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 5px;
+margin-top: 200px;
+margin-left: 500px;
+
+
+}
+
+#orange-shelf {
+width: 150px;
+height: 50px;
+background-color: orange;
+border: none;
+border-radius: 10px;
+color: white;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 5px;
+margin-top: 5px;
+margin-left: 500px;
+
 }

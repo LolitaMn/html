@@ -204,16 +204,78 @@ for (let i = 10; i < 101; i += 10) {
 // }
 // logData() 
 
-let age = 15 
+// let age = 15 
 
-if (age < 6) {
-    console.log("free")
-} else if (age < 18) {
-    console.log("child discount")
-} else if (age < 27) {
-    console.log("student discount")
-}else if (age < 67) {
-    console.log("full price")
-} else {
-    console.log("senior")
-}
+// if (age < 6) {
+//     console.log("free")
+// } else if (age < 18) {
+//     console.log("child discount")
+// } else if (age < 27) {
+//     console.log("student discount")
+// }else if (age < 67) {
+//     console.log("full price")
+// } else {
+//     console.log("senior")
+// }
+
+
+// let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+// for (i=0; i < largeCountries.length; i++) {
+//       console.log("- " + largeCountries[i])
+
+//     }
+
+
+// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+// largeCountries.pop()
+// largeCountries.push("Pakistan")
+// largeCountries.shift()
+// largeCountries.unshift("China")
+// console.log(largeCountries)
+
+
+// let dayOfMonth = 31
+// let weekday = "Friday"
+
+// if (dayOfMonth === 31 && weekday === "Friday") {
+//     console.log("😱")
+// }
+
+// let hands = ["rock", "paper", "scissor"]
+
+// function getHand() {
+//     let randomIndex = Math.floor(Math.random() * 3)
+//     return hands[randomIndex]
+// }
+
+// console.log( getHand() )
+
+
+
+// let fruit = ["🍎","🍊", "🍎","🍎", "🍊"]
+
+// let appleShelf = document.getElementById("apple-shelf")
+// let orangeShelf =document.getElementById("orange-shelf")
+
+// function sortfruits (){
+//     for (i = 0; i < fruit.length; i++){
+//     if (fruit[i] === "🍎") {
+//         appleShelf.textContent += "🍎"
+//     } else if (fruit[i] === "🍊") {
+//         orangeShelf.textContent += "🍊"
+//     } 
+// }  
+    
+// }
+
+// sortfruits ()
+
+let itBox = document.getElementById("box")
+itBox.addEventListener("click", function() {
+    console.log("I want to open the box!")
+})
+
+const playerName = "Per"
+let credits = 45
