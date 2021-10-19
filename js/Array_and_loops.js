@@ -272,10 +272,19 @@ for (let i = 10; i < 101; i += 10) {
 
 // sortfruits ()
 
-let itBox = document.getElementById("box")
-itBox.addEventListener("click", function() {
-    console.log("I want to open the box!")
-})
+// let itBox = document.getElementById("box")
+// itBox.addEventListener("click", function() {
+//     console.log("I want to open the box!")
+// })
 
-const playerName = "Per"
-let credits = 45
+// const playerName = "Per"
+// let credits = 45
+
+const container = document.getElementById("container")
+container.innerHTML = "<button onclick= 'buy()'>Buy!</button>"
+
+function buy () {
+    container.innerHTML += "<p>Thank you for buying!</p>"
+}
+
+
