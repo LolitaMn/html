@@ -288,3 +288,10 @@ function buy () {
 }
 
 
+const recipient = "James"
+const sender = "Mike Morgen "
+const email = `Hey,
+ ${recipient} ! How is goes? 
+ Cheers ${sender}`
+
+console.log(email)

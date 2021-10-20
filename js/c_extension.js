@@ -14,12 +14,15 @@ inputBtn.addEventListener("click",function() {
 function renderLeads() {
     let listItems = ""
     for (let i = 0; i < myLeads.length; i++) {                                                                     // const li = documnet.getElementById("li")
-       listItems += "<li><a target= '_blank' href='"+ myLeads + "'>" + myLeads[i] + "</a></li>"                  // li.textContent = myLeads[i]                 // ulEl.append(li)                                                               
-       
-       
-       console.log(listItems) 
+       //listItems += "<li><a target= '_blank' href='"+ myLeads + "'>" + myLeads[i] + "</a></li>"                  // li.textContent = myLeads[i]                 // ulEl.append(li)                                                               
+       listItems += ` 
+       <li>
+       <a target= '_blank' href='${myLeads[i]}'>
+            ${myLeads[i]}
+        </a>
+       </li>
+    `  
     }                                                                                                             
-        
         ulEl.innerHTML = listItems
   
 }   
